@@ -6,12 +6,12 @@ hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("fixed-position");
-
-  if (mobileMenu.classList.contains("active")) {
-    hamburger.innerHTML = '<i class="bi bi-x-square"></i>';
-  } else {
-    hamburger.innerHTML = '<i class="bi bi-list"></i>';
-  }
+  /*
+  hamburger.innerHTML = mobileMenu.classList.contains("active")
+    ? '<i class="bi bi-x-square"></i>'
+    : '<i class="bi bi-list"></i>';
+    */
+  hamburger.innerHTML = `<i class="bi ${mobileMenu.classList.contains("active") ? "bi-x-square" : "bi-list"}"></i>`;
 });
 
 overlay.addEventListener("click", () => {
