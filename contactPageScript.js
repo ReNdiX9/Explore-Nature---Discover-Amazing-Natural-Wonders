@@ -92,6 +92,7 @@ form.addEventListener("submit", function (e) {
     setTimeout(() => {
       thankyou.style.display = "none";
       form.style.display = "block";
+      formContent.style.display = "block";
     }, 3000);
   }, 2500);
 });
