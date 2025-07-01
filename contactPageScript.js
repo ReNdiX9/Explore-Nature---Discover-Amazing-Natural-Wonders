@@ -93,6 +93,6 @@ form.addEventListener("submit", function (e) {
       thankyou.style.display = "none";
       form.style.display = "block";
       formContent.style.display = "block";
-    }, 3000);
+    }, 2500);
   }, 2500);
 });
