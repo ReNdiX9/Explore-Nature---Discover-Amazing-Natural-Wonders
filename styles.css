@@ -232,6 +232,7 @@ nav {
   color: white;
   margin: 0;
   padding: 1rem;
+  user-select: none;
 }
 .main_text h1 {
   text-transform: uppercase;
